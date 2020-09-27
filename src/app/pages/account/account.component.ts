@@ -17,7 +17,7 @@ export class AccountComponent implements OnInit {
     { name: 'Profile', href: 'profile', icon: 'person' },  
     { name: 'My Properties', href: 'my-properties', icon: 'view_list' },
     { name: 'Favorites', href: 'favorites', icon: 'favorite' }, 
-    { name: 'Submit Property', href: '/submit-property', icon: 'add_circle' },  
+    { name: 'Submit Property', href: '/submit-movie', icon: 'add_circle' },
     { name: 'Logout', href: '/login', icon: 'power_settings_new' },    
   ]; 
   constructor(public router:Router) { }

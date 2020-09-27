@@ -1,4 +1,4 @@
-$spinner-color: #1976d2;
+$spinner-color: #ff8f00;
 .spinner-wrapper{
     position:fixed;
     top:0;
@@ -111,7 +111,29 @@ $spinner-color: #1976d2;
                         right: 100%;
                         animation : anim6 2s ease-in infinite;
                     }
-                }                
+                }
+                .down-right{
+                    width: 100%;
+                    height: 9px;
+                    transform: rotate(-135deg);
+                    right: -22px;
+                    top: -28px;
+                    .plane{
+                        right: 100%;
+                        animation : anim6 2s ease-in infinite;
+                    }
+                }
+                .down-left{
+                    width: 100%;
+                    height: 9px;
+                    transform: rotate(-45deg);
+                    right: -22px;
+                    top: -28px;
+                    .plane{
+                        right: 100%;
+                        animation : anim6 2s ease-in infinite;
+                    }
+                }
             }
             p.spinner-text{  
                 font-family: 'Montserrat';

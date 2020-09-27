@@ -3,7 +3,7 @@
   
       <mat-card ngClass.lt-lg="p-0" [formGroup]="submitForm">
   
-        <mat-horizontal-stepper #horizontalStepper linear="true" class="submit-property" (selectionChange)="onSelectionChange($event)">
+        <mat-horizontal-stepper #horizontalStepper linear="true" class="submit-movie" (selectionChange)="onSelectionChange($event)">
 
             <mat-step [stepControl]="submitForm.get('basic')" label="Basic">
               <div class="step-content">
@@ -11,20 +11,20 @@
                   <form formGroupName="basic" fxLayout="row wrap">
 
                       <div fxFlex="100" class="p-3">
-                        <h1 class="fw-500 text-center">Basic</h1>
+                        <h1 class="fw-500 text-center">Registro de Peliculas</h1>
                       </div>
-                              
+                      <!--Titulo de la pelicula-->
                       <div fxFlex="100" class="px-2">
                         <mat-form-field appearance="outline" class="w-100">
-                            <mat-label>Title</mat-label>
+                            <mat-label>Titulo de la Pelicula</mat-label>
                             <input matInput placeholder="Title" formControlName="title" required autocomplete="off">
-                            <mat-error *ngIf="submitForm.get('basic')['controls'].title.errors?.required">Title is required</mat-error>
+                            <mat-error *ngIf="submitForm.get('basic')['controls'].title.errors?.required">El titulo es requerido</mat-error>
                         </mat-form-field>
-                      </div>  
-                  
+                      </div>
+                      <!--resumen de la pelicula-->
                       <div fxFlex="100" class="px-2">
                         <mat-form-field appearance="outline" class="w-100">
-                            <mat-label>Description</mat-label> 
+                            <mat-label>Resumen</mat-label>
                             <textarea matInput placeholder="Description" formControlName="desc" rows="7"></textarea> 
                         </mat-form-field> 
                       </div> 

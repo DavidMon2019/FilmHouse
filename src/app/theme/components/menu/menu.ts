@@ -1,8 +1,8 @@
 import { Menu } from './menu.model';
 
-export const horizontalMenuItems = [ 
-    new Menu (1, 'Home', '/', null, null, false, 0),
-    new Menu (2, 'Properties', '/properties', null, null, false, 0), 
+export const horizontalMenuItems = [
+    new Menu (1, 'Inicio', '/', null, null, false, 0),
+    new Menu (2, 'Detalles', '/properties', null, null, false, 0),
 //     new Menu (40, 'Pages', null, null, null, true, 0),
 //     new Menu (41, 'Agents', '/agents', null, null, false, 40), 
 //     new Menu (42, 'Agent', '/agents/1', null, null, false, 40),
@@ -22,9 +22,9 @@ export const horizontalMenuItems = [
 //     new Menu (144, 'Menu item', null,'http://themeseason.com', '_blank', false, 140)    
 ]
 
-export const verticalMenuItems = [ 
-    new Menu (1, 'Home', '/', null, null, false, 0), 
-    new Menu (2, 'Properties', '/properties', null, null, false, 0), 
+export const verticalMenuItems = [
+    new Menu (1, 'Menu', '/', null, null, false, 0),
+    new Menu (2, 'Properties', '/properties', null, null, false, 0),
     // new Menu (40, 'Pages', null, null, null, true, 0),
     // new Menu (41, 'Agents', '/agents', null, null, false, 40), 
     // new Menu (42, 'Agent', '/agents/1', null, null, false, 40), 

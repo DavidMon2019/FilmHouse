@@ -1,9 +1,9 @@
 export class Property {
     constructor(public id: number,
-                public title: string, 
+                public title: string,
                 public desc: string,
                 public propertyType: string,
-                public propertyStatus: string[], 
+                public propertyStatus: string[],
                 public city: string,
                 public zipCode: string[],
                 public neighborhood: string[],
@@ -27,7 +27,8 @@ export class Property {
                 public videos: Video[],
                 public published: string,
                 public lastUpdate: string,
-                public views: number){ }
+                public views: number) {
+    }
 }
 
 // export class Property {
@@ -64,21 +65,24 @@ export class Property {
 
 
 export class Area {
-    constructor(public id: number, 
+    constructor(public id: number,
                 public value: number,
-                public unit: string){ }
+                public unit: string) {
+    }
 }
 
 export class AdditionalFeature {
-    constructor(public id: number, 
+    constructor(public id: number,
                 public name: string,
-                public value: string){ }
+                public value: string) {
+    }
 }
 
 export class Location {
-    constructor(public id: number, 
+    constructor(public id: number,
                 public lat: number,
-                public lng: number){ }
+                public lng: number) {
+    }
 }
 
 export class Price {
@@ -88,26 +92,29 @@ export class Price {
 
 
 export class Gallery {
-    constructor(public id: number, 
+    constructor(public id: number,
                 public small: string,
                 public medium: string,
-                public big: string){ }
+                public big: string) {
+    }
 }
 
 export class Plan {
-    constructor(public id: number, 
+    constructor(public id: number,
                 public name: string,
                 public desc: string,
                 public area: Area,
                 public rooms: number,
                 public baths: number,
-                public image: string){ }
+                public image: string) {
+    }
 }
 
 export class Video {
-    constructor(public id: number, 
+    constructor(public id: number,
                 public name: string,
-                public link: string){ }
+                public link: string) {
+    }
 }
 
 export class Pagination {
@@ -116,6 +123,22 @@ export class Pagination {
                 public prePage: number,
                 public nextPage: number,
                 public total: number,
-                public totalPages: number){ }
+                public totalPages: number) {
+    }
 }
 
+export class Peliculas {
+    constructor(public id: string,
+                public titulo_original: string,
+                public id_genero: string,
+                public id_lenguaje: string,
+                public id_subtitulo: string,
+                public fecha_produccion: string,
+                public fecha_estreno: string,
+                public url_pelicula: string,
+                public duracion: string,
+                public id_clasificacion: string,
+                public resumen: string
+    ) {
+    }
+}
