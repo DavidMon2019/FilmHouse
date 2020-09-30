@@ -10,36 +10,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0626f338-c216-464f-aedb-a8dc8234e58b" name="Default Changelist" comment="primer commit">
-      <change afterPath="$PROJECT_DIR$/src/app/pages/submit-movie/submit-movie.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/pages/submit-movie/submit-movie.component.ts" afterDir="false" />
+    <list default="true" id="0626f338-c216-464f-aedb-a8dc8234e58b" name="Default Changelist" comment="se cambie el logo y los datos de registro">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.settings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.settings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/account.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/account/account.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/submit-property/submit-property.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/submit-movie/submit-movie.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/submit-property/submit-property.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Entities/peliculas.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/submit-property/submit-property.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/submit-property/submit-property.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/submit-movie/submit-movie.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/header-image/header-image.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/header-image/header-image.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/logo/logo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/logo/logo.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/menu/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/components/menu/menu.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/toolbar1/toolbar1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/components/toolbar1/toolbar1.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/toolbar2/toolbar2.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/components/toolbar2/toolbar2.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/user-menu/user-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/components/user-menu/user-menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/styles/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/styles/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/styles/_spinner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/styles/_spinner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/styles/_theme-reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/styles/_theme-reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/carousel/slide-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/carousel/slide-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/carousel/slide-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/carousel/slide-2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/carousel/slide-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/carousel/slide-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/carousel/slide-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/carousel/slide-4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/carousel/slide-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/carousel/slide-5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/logos/logo-amber-dark.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/logos/logo-amber-dark.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/comentarios/comentarios.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/comentarios/comentarios.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/comments/comments.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/comments/comments.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/comments/comments.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/comments/comments.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/compare-overview/compare-overview.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/compare-overview/compare-overview.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +52,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../NodejsProjects/node-easy-comments-app" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.deploy.options" />
     <property name="ts.external.directory.path" value="C:\Users\David\Desktop\ESCRITORIO\APLICACIONES\AngularProjects\housekey\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -120,8 +106,21 @@
       <updated>1600835504062</updated>
       <workItem from="1600835511630" duration="1506000" />
       <workItem from="1600837316805" duration="284000" />
-      <workItem from="1601134893589" duration="27619000" />
+      <workItem from="1601134893589" duration="35079000" />
+      <workItem from="1601232924819" duration="276000" />
+      <workItem from="1601233647210" duration="17429000" />
+      <workItem from="1601274983594" duration="1007000" />
+      <workItem from="1601309591078" duration="8253000" />
+      <workItem from="1601347712492" duration="4062000" />
     </task>
+    <task id="LOCAL-00001" summary="se cambie el logo y los datos de registro">
+      <created>1601179959208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601179959208</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,69 +146,76 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primer commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="primer commit" />
+    <MESSAGE value="se cambie el logo y los datos de registro" />
+    <option name="LAST_COMMIT_MESSAGE" value="se cambie el logo y los datos de registro" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1953" y="242" key="#TSLint" timestamp="1601163715781">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
     <state x="1953" y="242" key="#TSLint/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601163715781" />
-    <state x="1458" y="-10" width="1256" height="686" key="DiffContextDialog" timestamp="1601171547979">
+    <state x="1458" y="-10" width="1256" height="686" key="DiffContextDialog" timestamp="1601250402256">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
-    <state x="1458" y="-10" width="1256" height="686" key="DiffContextDialog/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601171547979" />
-    <state width="1417" height="142" key="GridCell.Tab.0.bottom" timestamp="1601177137634">
+    <state x="1458" y="-10" width="1256" height="686" key="DiffContextDialog/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250402256" />
+    <state x="1865" y="86" key="FileChooserDialogImpl" timestamp="1601275205560">
       <screen x="1366" y="-102" width="1440" height="870" />
+    </state>
+    <state x="1865" y="86" key="FileChooserDialogImpl/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601275205560" />
+    <state width="1344" height="112" key="GridCell.Tab.0.bottom" timestamp="1601335305642">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1343" height="142" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601147611026" />
-    <state width="1417" height="142" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601177137634" />
-    <state width="1417" height="142" key="GridCell.Tab.0.center" timestamp="1601177137634">
-      <screen x="1366" y="-102" width="1440" height="870" />
+    <state width="1418" height="142" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250096414" />
+    <state width="1344" height="112" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1601335305642" />
+    <state width="1344" height="112" key="GridCell.Tab.0.center" timestamp="1601335305642">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1343" height="142" key="GridCell.Tab.0.center/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601147611026" />
-    <state width="1417" height="142" key="GridCell.Tab.0.center/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601177137634" />
-    <state width="1417" height="142" key="GridCell.Tab.0.left" timestamp="1601177137634">
-      <screen x="1366" y="-102" width="1440" height="870" />
+    <state width="1418" height="142" key="GridCell.Tab.0.center/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250096414" />
+    <state width="1344" height="112" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1601335305642" />
+    <state width="1344" height="112" key="GridCell.Tab.0.left" timestamp="1601335305641">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1343" height="142" key="GridCell.Tab.0.left/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601147611025" />
-    <state width="1417" height="142" key="GridCell.Tab.0.left/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601177137634" />
-    <state width="1417" height="142" key="GridCell.Tab.0.right" timestamp="1601177137634">
-      <screen x="1366" y="-102" width="1440" height="870" />
+    <state width="1418" height="142" key="GridCell.Tab.0.left/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250096414" />
+    <state width="1344" height="112" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1601335305641" />
+    <state width="1344" height="112" key="GridCell.Tab.0.right" timestamp="1601335305642">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state width="1343" height="142" key="GridCell.Tab.0.right/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601147611026" />
-    <state width="1417" height="142" key="GridCell.Tab.0.right/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601177137634" />
+    <state width="1418" height="142" key="GridCell.Tab.0.right/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250096414" />
+    <state width="1344" height="112" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1601335305642" />
+    <state x="1586" y="-24" key="SettingsEditor" timestamp="1601246332739">
+      <screen x="1366" y="-102" width="1440" height="870" />
+    </state>
+    <state x="1586" y="-24" key="SettingsEditor/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601246332739" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1601160043879">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601160043879" />
-    <state x="1367" y="-106" width="617" height="870" key="find.popup" timestamp="1601173229028">
+    <state x="1677" y="49" key="Vcs.Push.Dialog.v2" timestamp="1601179968212">
       <screen x="1366" y="-102" width="1440" height="870" />
+    </state>
+    <state x="1677" y="49" key="Vcs.Push.Dialog.v2/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601179968212" />
+    <state x="1" y="27" width="586" height="738" key="find.popup" timestamp="1601328674293">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
     <state x="0" y="30" width="585" height="738" key="find.popup/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601146680470" />
-    <state x="1367" y="-106" width="617" height="870" key="find.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601173229028" />
-    <state x="1742" y="147" key="run.anything.popup" timestamp="1600835672351">
+    <state x="1367" y="-106" width="617" height="870" key="find.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601248250001" />
+    <state x="1" y="27" width="586" height="738" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1601328674293" />
+    <state x="1742" y="147" key="run.anything.popup" timestamp="1601246231877">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
-    <state x="1742" y="147" key="run.anything.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1600835672351" />
-    <state x="1731" y="-32" width="709" height="800" key="search.everywhere.popup" timestamp="1601177846878">
+    <state x="1742" y="147" key="run.anything.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601246231877" />
+    <state x="1731" y="-32" width="709" height="800" key="search.everywhere.popup" timestamp="1601246542352">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601146498735" />
-    <state x="1731" y="-32" width="709" height="800" key="search.everywhere.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601177846878" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app/app.module.ts</url>
-          <line>15</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="1731" y="-32" width="709" height="800" key="search.everywhere.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601246542352" />
   </component>
 </project>

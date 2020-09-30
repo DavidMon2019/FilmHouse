@@ -1,7 +1,7 @@
 <div class="px-3">
     <div class="theme-container">
 
-        <mat-sidenav-container class="single-property mt-3">
+        <mat-sidenav-container class="single-property mt-5">
             <mat-sidenav #sidenav [opened]="sidenavOpen" [mode]="sidenavOpen ? 'side' : 'over'" position="end"
                          autoFocus="false" (openedChange)="onOpenedChange()">
                 <button fxHide="false" fxHide.gt-sm="true" mat-mini-fab color="warn" class="close"
@@ -9,64 +9,18 @@
                     <mat-icon>close</mat-icon>
                 </button>
                 <mat-card [perfectScrollbar]="psConfig">
-
-                    <div class="widget">
-                        <mat-card *ngIf="agent">
-
-                        </mat-card>
-                    </div>
-
                     <div class="widget">
                         <app-comments *ngIf="property" [propertyId]="property.id"></app-comments>
                     </div>
-
-                  <!--  <div class="widget">
-                        <h3 class="widget-title bg-primary">Mortgage Calculator</h3>
-                        <form [formGroup]="mortgageForm" (ngSubmit)="onMortgageFormSubmit(mortgageForm.value)">
-                            <mat-form-field appearance="outline" class="w-100">
-                                <mat-label>Principal Amount</mat-label>
-                                <input matInput placeholder="$" autocomplete="off" formControlName="principalAmount"
-                                       type="number">
-                            </mat-form-field>
-                            <mat-form-field appearance="outline" class="w-100">
-                                <mat-label>Down Payment</mat-label>
-                                <input matInput placeholder="$" autocomplete="off" formControlName="downPayment"
-                                       type="number">
-                            </mat-form-field>
-                            <mat-form-field appearance="outline" class="w-100">
-                                <mat-label>Interest Rate</mat-label>
-                                <input matInput placeholder="%" autocomplete="off" formControlName="interestRate"
-                                       type="number">
-                            </mat-form-field>
-                            <mat-form-field appearance="outline" class="w-100">
-                                <mat-label>Period</mat-label>
-                                <input matInput placeholder="Number of Years" autocomplete="off"
-                                       formControlName="period" type="number">
-                            </mat-form-field>
-                            <p *ngIf="monthlyPayment">Monthly Payment: <span
-                                    class="mx-2 fw-500">${{monthlyPayment}}</span></p>
-                            <div class="text-center">
-                                <button mat-raised-button color="accent" type="submit">Calculate Mortgage</button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div fxLayout="column" class="widget">
-                        <h3 class="widget-title bg-primary">Featured Properties</h3>
-                        <div *ngFor="let prop of featuredProperties" class="mb-3">
-                            <app-property-item [property]="prop" [viewType]="'grid'"></app-property-item>
-                        </div>
-                    </div>-->
-
                 </mat-card>
             </mat-sidenav>
             <mat-sidenav-content ngClass.gt-sm="distance">
                 <mat-card fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center">
                     <div>
-                        <h2 class="uppercase" ngClass.xs="text-center">{{property?.title}}</h2>
+                        <h2 class="uppercase" ngClass.xs="text-center">{{property?.titulo_original}}</h2>
                         <p fxLayout="row" fxLayoutAlign.xs="center" class="address mb-0">
                             <mat-icon class="text-muted">location_on</mat-icon>
-                            <span>{{property?.formattedAddress}}</span>
+                            <span>{{property?.}}</span>
                         </p>
                     </div>
                     <div fxLayout="column" fxLayoutAlign.xs="center center" class="mx-3">
@@ -88,48 +42,33 @@
                     </button>
                 </mat-card>
 
-                <mat-card class="mt-3">
-                    <div class="main-carousel mb-3">
-                        <div *ngIf="property" class="control-icons">
-                            <button mat-button [disabled]="onFavorites()" (click)="addToFavorites()"
-                                    matTooltip="Add To Favorite">
-                                <mat-icon class="">favorite_border</mat-icon>
-                            </button>
-                            <button mat-button [disabled]="onCompare()" (click)="addToCompare()"
-                                    matTooltip="Add To Compare">
-                                <mat-icon class="">compare_arrows</mat-icon>
-                            </button>
+
+
+                <mat-card *ngIf="property" class="mt-3">
+                    <mat-card-header fxLayoutAlign="center center">
+                        <mat-card-title class="uppercase">Pelicula</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <video controls class="mw-100">
+                            <source [src]="property.videos[0].link" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- <mat-video [src]="property.videos[0].link" [title]="property.videos[0].name" [download]="true" [keyboard]="false"></mat-video> -->
+                        <div class="mt-5">
+                            <h3 class="text-center fw-500">{{property.url_pelicula[1].name}}</h3>
+                            <div [innerHtml]="embedVideo" class="videoWrapper"></div>
                         </div>
-                        <div id="main-carousel" class="swiper-container" [swiper]="config"
-                             (indexChange)="onIndexChange($event)">
-                            <div class="swiper-wrapper">
-                                <div *ngFor="let image of property?.gallery" class="swiper-slide">
-                                    <img [attr.data-src]="image.big" class="swiper-lazy">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                            <button mat-mini-fab color="primary" class="swiper-button-prev swipe-arrow">
-                                <mat-icon>keyboard_arrow_left</mat-icon>
-                            </button>
-                            <button mat-mini-fab color="primary" class="swiper-button-next swipe-arrow">
-                                <mat-icon>keyboard_arrow_right</mat-icon>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="small-carousel">
-                        <div id="small-carousel" class="swiper-container" [swiper]="config2">
-                            <div class="swiper-wrapper">
-                                <div *ngFor="let image of property?.gallery; let i=index;" class="swiper-slide"
-                                     [ngClass]="'thumb-'+i" [class.active-thumb]="i == 0">
-                                    <img [attr.data-src]="image.small" class="swiper-lazy mw-100"
-                                         (click)="selectImage(i)">
-                                    <div class="swiper-lazy-preloader"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </mat-card-content>
                 </mat-card>
 
+                <mat-card class="mt-3">
+                    <mat-card-header fxLayoutAlign="center center">
+                        <mat-card-title class="uppercase">Description</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>{{property?.resumen}}</p>
+                    </mat-card-content>
+                </mat-card>
 
                 <mat-card *ngIf="property" class="mt-3">
                     <mat-card-header fxLayoutAlign="center center">
@@ -224,15 +163,47 @@
                     </mat-card-content>
                 </mat-card>
 
+
                 <mat-card class="mt-3">
-                    <mat-card-header fxLayoutAlign="center center">
-                        <mat-card-title class="uppercase">Description</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <p>{{property?.desc}}</p>
-                        <p>{{property?.desc}}</p>
-                        <p>{{property?.desc}}</p>
-                    </mat-card-content>
+                    <div class="main-carousel mb-3">
+                        <div *ngIf="property" class="control-icons">
+                            <button mat-button [disabled]="onFavorites()" (click)="addToFavorites()"
+                                    matTooltip="Add To Favorite">
+                                <mat-icon class="">favorite_border</mat-icon>
+                            </button>
+                            <button mat-button [disabled]="onCompare()" (click)="addToCompare()"
+                                    matTooltip="Add To Compare">
+                                <mat-icon class="">compare_arrows</mat-icon>
+                            </button>
+                        </div>
+                        <div id="main-carousel" class="swiper-container" [swiper]="config"
+                             (indexChange)="onIndexChange($event)">
+                            <div class="swiper-wrapper">
+                                <div *ngFor="let image of property?.gallery" class="swiper-slide">
+                                    <img [attr.data-src]="image.big" class="swiper-lazy">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                            <button mat-mini-fab color="primary" class="swiper-button-prev swipe-arrow">
+                                <mat-icon>keyboard_arrow_left</mat-icon>
+                            </button>
+                            <button mat-mini-fab color="primary" class="swiper-button-next swipe-arrow">
+                                <mat-icon>keyboard_arrow_right</mat-icon>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="small-carousel">
+                        <div id="small-carousel" class="swiper-container" [swiper]="config2">
+                            <div class="swiper-wrapper">
+                                <div *ngFor="let image of property?.gallery; let i=index;" class="swiper-slide"
+                                     [ngClass]="'thumb-'+i" [class.active-thumb]="i == 0">
+                                    <img [attr.data-src]="image.small" class="swiper-lazy mw-100"
+                                         (click)="selectImage(i)">
+                                    <div class="swiper-lazy-preloader"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </mat-card>
                 <!--
                                 <mat-card class="mt-3">
@@ -270,23 +241,6 @@
                     </mat-card-content>
                 </mat-card>  -->
 
-                <mat-card *ngIf="property" class="mt-3">
-                    <mat-card-header fxLayoutAlign="center center">
-                        <mat-card-title class="uppercase">Videos</mat-card-title>
-                    </mat-card-header>
-                    <mat-card-content>
-                        <video controls class="mw-100">
-                            <source [src]="property.videos[0].link" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <!-- <mat-video [src]="property.videos[0].link" [title]="property.videos[0].name" [download]="true" [keyboard]="false"></mat-video> -->
-                        <div class="mt-5">
-                            <h3 class="text-center fw-500">{{property.videos[1].name}}</h3>
-                            <div [innerHtml]="embedVideo" class="videoWrapper"></div>
-                        </div>
-                    </mat-card-content>
-                </mat-card>
-
                 <mat-card class="mt-3" fxLayout="row wrap" fxLayoutAlign="space-between center">
                     <span>ID:<span class="fw-500 mx-2">{{property?.id}}</span></span>
                     <span>Published:<span
@@ -295,7 +249,6 @@
                             class="fw-500 mx-2">{{property?.lastUpdate | date:"dd MMMM, yyyy"}}</span></span>
                     <span>Views:<span class="fw-500 mx-2">{{property?.views}}</span></span>
                 </mat-card>
-
 
 
             </mat-sidenav-content>
