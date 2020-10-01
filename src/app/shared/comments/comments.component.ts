@@ -9,32 +9,33 @@ import {Comentarios} from '../../app.models';
     styleUrls: ['./comments.component.scss']
 })
 export class CommentsComponent implements OnInit {
-    @Input('propertyId') propertyId;
+    @Input('propertyId') propertyId: string;
     public commentForm: FormGroup;
 
+    /*Inicializacion del objeto tipo comentarios*/
     public comentarios: Comentarios[] = [{
         author: '',
         text: '',
-        id: this.propertyId
+        idPelicula: this.propertyId
     }];
-    /* public reviews: = [
-                {
-                    author: 'Julia Aniston',
-                    avatar: 'assets/images/avatars/avatar-2.png',
-                    tooltip: 'Very Satisfied',
-                    icon: 'sentiment_very_satisfied',
-                    date: '04 February, 2018 at 10:22',
-                    text: 'Nulla accumsan, lacus sed suscipit rutrum, turpis augue accumsan metus, in accumsan urna mi vehicula lorem. Pellentesque semper nibh vitae augue placerat finibus. Nulla sed porttitor nunc, quis tristique sem. Quisque in varius nisl. Integer turpis lorem, ultricies sed sem nec, commodo molestie arcu. Nulla finibus ex tortor, et suscipit magna semper consectetur. Cras sit amet metus dui. Maecenas eget dui at ex varius malesuada vel non felis.'
-                },
-                {
-                    author: 'Andy Warhol',
-                    avatar: 'assets/images/avatars/avatar-3.png',
-                    tooltip: 'Neutral',
-                    icon: 'sentiment_neutral',
-                    date: '14 February, 2018 at 11:10',
-                    text: 'Pellentesque hendrerit vel turpis aliquam placerat. Suspendisse ullamcorper congue feugiat. Etiam gravida metus ac massa posuere venenatis. Pellentesque vehicula lobortis dolor, ac pretium dolor maximus quis. Fusce vitae iaculis mauris, quis posuere ex. Mauris vitae convallis nibh. Etiam eget enim at orci interdum maximus nec in ante.'
-                }
-            ];*/
+    // /* public reviews: = [
+    //             {
+    //                 author: 'Julia Aniston',
+    //                 avatar: 'assets/images/avatars/avatar-2.png',
+    //                 tooltip: 'Very Satisfied',
+    //                 icon: 'sentiment_very_satisfied',
+    //                 date: '04 February, 2018 at 10:22',
+    //                 text: 'Nulla accumsan, lacus sed suscipit rutrum, turpis augue accumsan metus, in accumsan urna mi vehicula lorem. Pellentesque semper nibh vitae augue placerat finibus. Nulla sed porttitor nunc, quis tristique sem. Quisque in varius nisl. Integer turpis lorem, ultricies sed sem nec, commodo molestie arcu. Nulla finibus ex tortor, et suscipit magna semper consectetur. Cras sit amet metus dui. Maecenas eget dui at ex varius malesuada vel non felis.'
+    //             },
+    //             {
+    //                 author: 'Andy Warhol',
+    //                 avatar: 'assets/images/avatars/avatar-3.png',
+    //                 tooltip: 'Neutral',
+    //                 icon: 'sentiment_neutral',
+    //                 date: '14 February, 2018 at 11:10',
+    //                 text: 'Pellentesque hendrerit vel turpis aliquam placerat. Suspendisse ullamcorper congue feugiat. Etiam gravida metus ac massa posuere venenatis. Pellentesque vehicula lobortis dolor, ac pretium dolor maximus quis. Fusce vitae iaculis mauris, quis posuere ex. Mauris vitae convallis nibh. Etiam eget enim at orci interdum maximus nec in ante.'
+    //             }
+    //         ];*/
 
     public ratings = [
         {title: 'Very Dissatisfied', icon: 'sentiment_very_dissatisfied', percentage: 20, selected: false},
@@ -72,6 +73,7 @@ export class CommentsComponent implements OnInit {
         this.commentForm.controls.rate.setValue(rating.percentage);
     }
 
+    /*Agregar Comentarios*/
     public addComments(values: any) {
         if (this.commentForm.valid) {
             console.log(values);

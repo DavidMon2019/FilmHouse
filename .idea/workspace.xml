@@ -14,15 +14,30 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Entities/peliculas.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.models.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/account/account.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/account/account.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/account/edit-property/edit-property.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/account/edit-property/edit-property.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/agents/agent/agent.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/agents/agent/agent.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/agents/agent/agent.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/agents/agents.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/agents/agents.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/agents/agents.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/agents/agents.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/pages/pages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/pages.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/services/comentarios/comentarios.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/comentarios/comentarios.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/comments/comments.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/comments/comments.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/services/peliculas/peliculas.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/peliculas/peliculas.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/comments/comments.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/comments/comments.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/compare-overview/compare-overview.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/compare-overview/compare-overview.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/property-item/property-item.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/property-item/property-item.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/property-item/property-item.component.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -112,6 +127,9 @@
       <workItem from="1601274983594" duration="1007000" />
       <workItem from="1601309591078" duration="8253000" />
       <workItem from="1601347712492" duration="4062000" />
+      <workItem from="1601430430521" duration="7039000" />
+      <workItem from="1601449092574" duration="2151000" />
+      <workItem from="1601483922752" duration="10213000" />
     </task>
     <task id="LOCAL-00001" summary="se cambie el logo y los datos de registro">
       <created>1601179959208</created>
@@ -154,64 +172,71 @@
     <option name="LAST_COMMIT_MESSAGE" value="se cambie el logo y los datos de registro" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="308" y="76" key="#Inspections" timestamp="1601503455355">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="308" y="76" key="#Inspections/0.30.1366.738@0.30.1366.738" timestamp="1601503455355" />
     <state x="1953" y="242" key="#TSLint" timestamp="1601163715781">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
     <state x="1953" y="242" key="#TSLint/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601163715781" />
-    <state x="1458" y="-10" width="1256" height="686" key="DiffContextDialog" timestamp="1601250402256">
-      <screen x="1366" y="-102" width="1440" height="870" />
+    <state x="87" y="108" width="1192" height="582" key="DiffContextDialog" timestamp="1601450569901">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
+    <state x="87" y="108" width="1192" height="582" key="DiffContextDialog/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601450569901" />
     <state x="1458" y="-10" width="1256" height="686" key="DiffContextDialog/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250402256" />
     <state x="1865" y="86" key="FileChooserDialogImpl" timestamp="1601275205560">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
     <state x="1865" y="86" key="FileChooserDialogImpl/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601275205560" />
-    <state width="1344" height="112" key="GridCell.Tab.0.bottom" timestamp="1601335305642">
+    <state width="1344" height="141" key="GridCell.Tab.0.bottom" timestamp="1601509084902">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1343" height="142" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601147611026" />
-    <state width="1418" height="142" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250096414" />
-    <state width="1344" height="112" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1601335305642" />
-    <state width="1344" height="112" key="GridCell.Tab.0.center" timestamp="1601335305642">
+    <state width="1344" height="141" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601451324696" />
+    <state width="1418" height="141" key="GridCell.Tab.0.bottom/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601439724937" />
+    <state width="1344" height="141" key="GridCell.Tab.0.bottom/0.30.1366.738@0.30.1366.738" timestamp="1601509084902" />
+    <state width="1344" height="141" key="GridCell.Tab.0.center" timestamp="1601509084902">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1343" height="142" key="GridCell.Tab.0.center/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601147611026" />
-    <state width="1418" height="142" key="GridCell.Tab.0.center/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250096414" />
-    <state width="1344" height="112" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1601335305642" />
-    <state width="1344" height="112" key="GridCell.Tab.0.left" timestamp="1601335305641">
+    <state width="1344" height="141" key="GridCell.Tab.0.center/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601451324696" />
+    <state width="1418" height="141" key="GridCell.Tab.0.center/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601439724937" />
+    <state width="1344" height="141" key="GridCell.Tab.0.center/0.30.1366.738@0.30.1366.738" timestamp="1601509084902" />
+    <state width="1344" height="141" key="GridCell.Tab.0.left" timestamp="1601509084902">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1343" height="142" key="GridCell.Tab.0.left/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601147611025" />
-    <state width="1418" height="142" key="GridCell.Tab.0.left/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250096414" />
-    <state width="1344" height="112" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1601335305641" />
-    <state width="1344" height="112" key="GridCell.Tab.0.right" timestamp="1601335305642">
+    <state width="1344" height="141" key="GridCell.Tab.0.left/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601451324696" />
+    <state width="1418" height="141" key="GridCell.Tab.0.left/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601439724937" />
+    <state width="1344" height="141" key="GridCell.Tab.0.left/0.30.1366.738@0.30.1366.738" timestamp="1601509084902" />
+    <state width="1344" height="141" key="GridCell.Tab.0.right" timestamp="1601509084902">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state width="1343" height="142" key="GridCell.Tab.0.right/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601147611026" />
-    <state width="1418" height="142" key="GridCell.Tab.0.right/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601250096414" />
-    <state width="1344" height="112" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1601335305642" />
+    <state width="1344" height="141" key="GridCell.Tab.0.right/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601451324696" />
+    <state width="1418" height="141" key="GridCell.Tab.0.right/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601439724937" />
+    <state width="1344" height="141" key="GridCell.Tab.0.right/0.30.1366.738@0.30.1366.738" timestamp="1601509084902" />
     <state x="1586" y="-24" key="SettingsEditor" timestamp="1601246332739">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
     <state x="1586" y="-24" key="SettingsEditor/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601246332739" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1601160043879">
-      <screen x="1366" y="-102" width="1440" height="870" />
+    <state width="498" height="398" key="SwitcherDM" timestamp="1601450382800">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
+    <state width="498" height="398" key="SwitcherDM/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601450382800" />
     <state width="498" height="446" key="SwitcherDM/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601160043879" />
     <state x="1677" y="49" key="Vcs.Push.Dialog.v2" timestamp="1601179968212">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>
     <state x="1677" y="49" key="Vcs.Push.Dialog.v2/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601179968212" />
-    <state x="1" y="27" width="586" height="738" key="find.popup" timestamp="1601328674293">
+    <state x="1" y="27" width="586" height="738" key="find.popup" timestamp="1601505984349">
       <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="0" y="30" width="585" height="738" key="find.popup/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601146680470" />
+    <state x="0" y="30" width="585" height="738" key="find.popup/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601451024292" />
     <state x="1367" y="-106" width="617" height="870" key="find.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601248250001" />
-    <state x="1" y="27" width="586" height="738" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1601328674293" />
-    <state x="1742" y="147" key="run.anything.popup" timestamp="1601246231877">
-      <screen x="1366" y="-102" width="1440" height="870" />
+    <state x="1" y="27" width="586" height="738" key="find.popup/0.30.1366.738@0.30.1366.738" timestamp="1601505984349" />
+    <state x="357" y="241" key="run.anything.popup" timestamp="1601451024143">
+      <screen x="0" y="30" width="1366" height="738" />
     </state>
-    <state x="1742" y="147" key="run.anything.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601246231877" />
+    <state x="357" y="241" key="run.anything.popup/0.30.1366.738/1366.-102.1440.870@0.30.1366.738" timestamp="1601451024143" />
+    <state x="1742" y="147" key="run.anything.popup/0.30.1366.738/1366.-102.1440.870@1366.-102.1440.870" timestamp="1601439869683" />
     <state x="1731" y="-32" width="709" height="800" key="search.everywhere.popup" timestamp="1601246542352">
       <screen x="1366" y="-102" width="1440" height="870" />
     </state>

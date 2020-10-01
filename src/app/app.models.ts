@@ -46,7 +46,7 @@ export class Clasificacion {
 export interface Comentarios {
     author: string,
     text: string,
-    idPelicula: any
+    idPelicula: string
 }
 
 

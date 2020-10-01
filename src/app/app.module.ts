@@ -38,7 +38,6 @@ import {VerticalMenuComponent} from './theme/components/menu/vertical-menu/verti
 import {FooterComponent} from './theme/components/footer/footer.component';
 import {LockScreenComponent} from './pages/lock-screen/lock-screen.component';
 
-import {ServicesModule} from '../app/services/services.module'
 
 @NgModule({
     declarations: [
@@ -71,8 +70,7 @@ import {ServicesModule} from '../app/services/services.module'
         NgProgressHttpModule,
         InputFileModule.forRoot(config),
         AppRoutingModule,
-        SharedModule,
-        ServicesModule
+        SharedModule
     ],
     providers: [
         AppSettings,

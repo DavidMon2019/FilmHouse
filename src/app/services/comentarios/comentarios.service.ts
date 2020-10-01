@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 import 'rxjs/add/operator/map';
 
 @Injectable({
-    providedIn: 'root'
+    providedIn: 'root' 
 })
 export class ComentariosService {
     private comentarios = 'http://localhost:8080/comentarios';

@@ -47,8 +47,8 @@ export class PropertyComponent implements OnInit {
         this.sub = this.activatedRoute.params.subscribe(params => {
             this.getPropertyById(params['id']);
         });
-        this.getRelatedProperties();
-        this.getFeaturedProperties();
+/*        this.getRelatedProperties();
+        this.getFeaturedProperties();*/
         this.getAgent(1);
         if (window.innerWidth < 960) {
             this.sidenavOpen = false;
@@ -86,7 +86,7 @@ export class PropertyComponent implements OnInit {
     public getPropertyById(id) {
         this.appService.getPropertyById(id).subscribe(data => {
             this.property = data;
-            this.embedVideo = this.embedService.embed(this.property.videos[1].link);
+          //  this.embedVideo = this.embedService.embed(this.property.videos[1].link);
             setTimeout(() => {
                 this.config.observer = true;
                 this.config2.observer = true;
@@ -190,7 +190,7 @@ export class PropertyComponent implements OnInit {
         return this.appService.Data.favorites.filter(item => item.id == this.property.id)[0];
     }
 
-    public getRelatedProperties() {
+/*    public getRelatedProperties() {
         this.appService.getRelatedProperties().subscribe(properties => {
             this.relatedProperties = properties;
         })
@@ -200,7 +200,7 @@ export class PropertyComponent implements OnInit {
         this.appService.getFeaturedProperties().subscribe(properties => {
             this.featuredProperties = properties.slice(0, 3);
         })
-    }
+    }*/
 
     public getAgent(agentId: number = 1) {
         var ids = [1, 2, 3, 4, 5]; //agent ids
@@ -214,7 +214,7 @@ export class PropertyComponent implements OnInit {
         }
     }
 
-    public onMortgageFormSubmit(values: Object) {
+/*    public onMortgageFormSubmit(values: Object) {
         if (this.mortgageForm.valid) {
             var principalAmount = values['principalAmount']
             var down = values['downPayment']
@@ -222,7 +222,7 @@ export class PropertyComponent implements OnInit {
             var term = values['period']
             this.monthlyPayment = this.calculateMortgage(principalAmount, down, interest / 100 / 12, term * 12).toFixed(2);
         }
-    }
+    }*/
 
     public calculateMortgage(principalAmount: any, downPayment: any, interestRate: any, period: any) {
         return ((principalAmount - downPayment) * interestRate) / (1 - Math.pow(1 + interestRate, -period));
