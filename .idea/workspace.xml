@@ -11,152 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0626f338-c216-464f-aedb-a8dc8234e58b" name="Default Changelist" comment="se cambie el logo y los datos de registro">
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/chat.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/chat.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/shared/model/action.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/shared/model/event.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/shared/model/message.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/shared/model/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/shared/services/socket.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/shared/services/store-user.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/chat/shared/services/store-user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/property-item/property-item.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/property-item/property-item.component.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/shared/property-item/property-item.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/flags/en.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/flags/pt.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/i18n/en.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/i18n/pt.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.models.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/about/about.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/about/about.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/WebSocketAPI.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/about/about.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/about/about.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/account.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/account.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/account.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/account.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/dashboard/dashboard.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/dashboard/dashboard.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/dashboard/dashboard.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/edit-property/edit-property.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/edit-property/edit-property.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/edit-property/edit-property.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/favorites/favorites.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/favorites/favorites.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/favorites/favorites.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/my-properties/my-properties.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/my-properties/my-properties.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/my-properties/my-properties.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/profile/profile.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/profile/profile.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/account/profile/profile.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/compare/compare.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/compare/compare.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/compare/compare.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/compare/compare.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/contact/contact.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/contact/contact.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/contact/contact.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/contact/contact.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/faq/faq.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/faq/faq.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/faq/faq.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/faq/faq.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/featured-properties/featured-properties.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/featured-properties/featured-properties.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/featured-properties/featured-properties.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/home/home.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/hot-offer-today/hot-offer-today.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/hot-offer-today/hot-offer-today.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/home/hot-offer-today/hot-offer-today.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing/landing.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing/landing.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing/landing.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/landing/landing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/lock-screen/lock-screen.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/lock-screen/lock-screen.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/lock-screen/lock-screen.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/login/login.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/login/login.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/login/login.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/login/login.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/not-found/not-found.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/not-found/not-found.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/not-found/not-found.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/not-found/not-found.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/pages.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pages.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/pages.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pricing/monthly/monthly.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pricing/monthly/monthly.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pricing/pricing.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pricing/pricing.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pricing/pricing.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pricing/pricing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pricing/yearly/yearly.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/pricing/yearly/yearly.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/properties/properties.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/properties/properties.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/properties/properties.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/properties/properties.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/pages/properties/property/property.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/register/register.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/register/register.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/register/register.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/register/register.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/submit-movie/submit-movie.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/submit-movie/submit-movie.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/submit-movie/submit-movie.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/submit-movie/submit-movie.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/terms-conditions/terms-conditions.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/terms-conditions/terms-conditions.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/terms-conditions/terms-conditions.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/pages/terms-conditions/terms-conditions.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/comments/comments.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/comments/comments.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/comments/comments.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/comments/comments.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/header-image/header-image.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/header-image/header-image.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/header-image/header-image.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/load-more/load-more.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/load-more/load-more.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/load-more/load-more.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/mission/mission.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/mission/mission.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/mission/mission.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/our-agents/our-agents.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/our-agents/our-agents.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/our-agents/our-agents.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/our-services/our-services.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/our-services/our-services.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/our-services/our-services.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-carousel/properties-carousel.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-carousel/properties-carousel.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-carousel/properties-carousel.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-search-results-filters/properties-search-results-filters.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-search-results-filters/properties-search-results-filters.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-search-results-filters/properties-search-results-filters.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-search/properties-search.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-search/properties-search.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/properties-search/properties-search.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/rating/rating.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/rating/rating.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/rating/rating.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/testimonials/testimonials.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/testimonials/testimonials.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/shared/testimonials/testimonials.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/components/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/menu/menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/components/menu/menu.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/toolbar1/toolbar1.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/components/toolbar1/toolbar1.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/toolbar2/toolbar2.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/toolbar2/toolbar2.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/theme/components/user-menu/user-menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/theme/components/user-menu/user-menu.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -274,6 +129,7 @@
       <workItem from="1605319043275" duration="11431000" />
       <workItem from="1605376065734" duration="6446000" />
       <workItem from="1605456057816" duration="3229000" />
+      <workItem from="1605466478125" duration="53000" />
     </task>
     <task id="LOCAL-00001" summary="se cambie el logo y los datos de registro">
       <created>1601179959208</created>
