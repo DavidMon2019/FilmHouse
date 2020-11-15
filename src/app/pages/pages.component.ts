@@ -15,8 +15,8 @@ export class PagesComponent implements OnInit {
     public headerTypeOption: string;
     public searchPanelVariants = [1, 2, 3];
     public searchPanelVariantOption: number;
-    public headerFixed: boolean = false;
-    public showBackToTop: boolean = false;
+    public headerFixed = false;
+    public showBackToTop = false;
     public scrolledCount = 0;
 
     public settings: Settings;
@@ -56,7 +56,7 @@ export class PagesComponent implements OnInit {
         (scrollTop > 300) ? this.showBackToTop = true : this.showBackToTop = false;
 
         if (this.settings.stickyMenuToolbar) {
-            let top_toolbar = document.getElementById('top-toolbar');
+            const top_toolbar = document.getElementById('top-toolbar');
             if (top_toolbar) {
                 if (scrollTop >= top_toolbar.clientHeight) {
                     this.settings.mainToolbarFixed = true;
@@ -67,7 +67,7 @@ export class PagesComponent implements OnInit {
         }
 
 
-        let load_more = document.getElementById('load-more');
+        const load_more = document.getElementById('load-more');
         if (load_more) {
             if (window.innerHeight > load_more.getBoundingClientRect().top + 120) {
                 if (!this.settings.loadMore.complete) {
@@ -88,9 +88,9 @@ export class PagesComponent implements OnInit {
     }
 
     public scrollToTop() {
-        var scrollDuration = 200;
-        var scrollStep = -window.pageYOffset / (scrollDuration / 20);
-        var scrollInterval = setInterval(() => {
+        const scrollDuration = 200;
+        const scrollStep = -window.pageYOffset / (scrollDuration / 20);
+        const scrollInterval = setInterval(() => {
             if (window.pageYOffset != 0) {
                 window.scrollBy(0, scrollStep);
             } else {
@@ -99,7 +99,7 @@ export class PagesComponent implements OnInit {
         }, 10);
         if (window.innerWidth <= 768) {
             setTimeout(() => {
-                window.scrollTo(0, 0)
+                window.scrollTo(0, 0);
             });
         }
     }

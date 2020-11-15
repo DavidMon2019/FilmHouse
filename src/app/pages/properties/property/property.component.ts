@@ -9,6 +9,8 @@ import {AppSettings, Settings} from 'src/app/app.settings';
 import {CompareOverviewComponent} from 'src/app/shared/compare-overview/compare-overview.component';
 import {EmbedVideoService} from 'ngx-embed-video';
 import {emailValidator} from 'src/app/theme/utils/app-validators';
+import {DomSanitizer, SafeResourceUrl} from '@angular/platform-browser';
+
 
 @Component({
     selector: 'app-property',
@@ -39,16 +41,22 @@ export class PropertyComponent implements OnInit {
                 public appService: AppService,
                 private activatedRoute: ActivatedRoute,
                 private embedService: EmbedVideoService,
-                public fb: FormBuilder) {
+                public fb: FormBuilder,
+                private sanitizer: DomSanitizer) {
         this.settings = this.appSettings.settings;
     }
 
     ngOnInit() {
+
+        const tag = document.createElement('script');
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.body.appendChild(tag);
+
         this.sub = this.activatedRoute.params.subscribe(params => {
             this.getPropertyById(params['id']);
         });
-/*        this.getRelatedProperties();
-        this.getFeaturedProperties();*/
+        /*        this.getRelatedProperties();
+                this.getFeaturedProperties();*/
         this.getAgent(1);
         if (window.innerWidth < 960) {
             this.sidenavOpen = false;
@@ -75,6 +83,18 @@ export class PropertyComponent implements OnInit {
         this.sub.unsubscribe();
     }
 
+    getVideoIframe(url) {
+        var video, results;
+
+        if (url === null) {
+            return '';
+        }
+        results = url.match('[\\?&]v=([^&#]*)');
+        video = (results === null) ? url : results[1];
+
+        return this.sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/' + video);
+    }
+
     @HostListener('window:resize')
     public onWindowResize(): void {
         (window.innerWidth < 960) ? this.sidenavOpen = false : this.sidenavOpen = true;
@@ -86,7 +106,7 @@ export class PropertyComponent implements OnInit {
     public getPropertyById(id) {
         this.appService.getPropertyById(id).subscribe(data => {
             this.property = data;
-          //  this.embedVideo = this.embedService.embed(this.property.videos[1].link);
+            //  this.embedVideo = this.embedService.embed(this.property.videos[1].link);
             setTimeout(() => {
                 this.config.observer = true;
                 this.config2.observer = true;
@@ -190,17 +210,17 @@ export class PropertyComponent implements OnInit {
         return this.appService.Data.favorites.filter(item => item.id == this.property.id)[0];
     }
 
-/*    public getRelatedProperties() {
-        this.appService.getRelatedProperties().subscribe(properties => {
-            this.relatedProperties = properties;
-        })
-    }
+    /*    public getRelatedProperties() {
+            this.appService.getRelatedProperties().subscribe(properties => {
+                this.relatedProperties = properties;
+            })
+        }
 
-    public getFeaturedProperties() {
-        this.appService.getFeaturedProperties().subscribe(properties => {
-            this.featuredProperties = properties.slice(0, 3);
-        })
-    }*/
+        public getFeaturedProperties() {
+            this.appService.getFeaturedProperties().subscribe(properties => {
+                this.featuredProperties = properties.slice(0, 3);
+            })
+        }*/
 
     public getAgent(agentId: number = 1) {
         var ids = [1, 2, 3, 4, 5]; //agent ids
@@ -214,15 +234,15 @@ export class PropertyComponent implements OnInit {
         }
     }
 
-/*    public onMortgageFormSubmit(values: Object) {
-        if (this.mortgageForm.valid) {
-            var principalAmount = values['principalAmount']
-            var down = values['downPayment']
-            var interest = values['interestRate']
-            var term = values['period']
-            this.monthlyPayment = this.calculateMortgage(principalAmount, down, interest / 100 / 12, term * 12).toFixed(2);
-        }
-    }*/
+    /*    public onMortgageFormSubmit(values: Object) {
+            if (this.mortgageForm.valid) {
+                var principalAmount = values['principalAmount']
+                var down = values['downPayment']
+                var interest = values['interestRate']
+                var term = values['period']
+                this.monthlyPayment = this.calculateMortgage(principalAmount, down, interest / 100 / 12, term * 12).toFixed(2);
+            }
+        }*/
 
     public calculateMortgage(principalAmount: any, downPayment: any, interestRate: any, period: any) {
         return ((principalAmount - downPayment) * interestRate) / (1 - Math.pow(1 + interestRate, -period));

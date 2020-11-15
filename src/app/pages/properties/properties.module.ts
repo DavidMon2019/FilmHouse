@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { AgmCoreModule } from '@agm/core'; 
+import { AgmCoreModule } from '@agm/core';
 import { MatVideoModule } from 'mat-video';
 import { SharedModule } from '../../shared/shared.module';
 import { PropertiesComponent } from './properties.component';
 import { PropertyComponent } from './property/property.component';
+import {YouTubePlayerModule} from '@angular/youtube-player';
+import {ChatModule} from '../../shared/chat/chat.module';
 
 export const routes = [
   { path: '', component: PropertiesComponent, pathMatch: 'full' },
@@ -14,18 +16,20 @@ export const routes = [
 
 @NgModule({
   declarations: [
-    PropertiesComponent, 
+    PropertiesComponent,
     PropertyComponent
   ],
   exports: [
-    PropertiesComponent, 
+    PropertiesComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule.forChild(routes),
-    AgmCoreModule, 
-    MatVideoModule,
-    SharedModule
-  ]
+    imports: [
+        CommonModule,
+        RouterModule.forChild(routes),
+        AgmCoreModule,
+        MatVideoModule,
+        SharedModule,
+        YouTubePlayerModule,
+        ChatModule
+    ]
 })
 export class PropertiesModule { }

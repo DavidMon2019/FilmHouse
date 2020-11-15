@@ -27,7 +27,9 @@ export class AppService {
 
     public url = "assets/data/";
     public apiKey = 'AIzaSyA1rF9bttCxRmsNdZYjW7FzIoyrul5jb-s';
-    private peliculas = 'http://localhost:8989/pelicula';
+
+    //conexion del servicio web
+    private peliculas = 'http://localhost:8087/peliculas';
     private headders = new HttpHeaders({
         'Content-Type': 'application/json'
     });
@@ -38,14 +40,15 @@ export class AppService {
                 public appSettings: AppSettings) {
     }
 
-
+    /*Get all movies*/
     public getProperties(): Observable<Property[]> {
-        const url = `${this.peliculas}/pelicula`;
-        return this.http.get<Property[]>(url, {headers: this.headders,params: null});
+        const url = `${this.peliculas}/all-pelis`;
+        return this.http.get<Property[]>(url, {headers: this.headders, params: null});
     }
 
+    /*Get movies by id*/
     public getPropertyById(id): Observable<Property> {
-        const url = `${this.peliculas}/pelicula/${id}`;
+        const url = `${this.peliculas}/pelis/${id}`;
         return this.http.get<Property>(url, {headers: this.headders});
     }
 
@@ -96,7 +99,7 @@ export class AppService {
     public addToFavorites(property: Property, direction) {
         if (!this.Data.favorites.filter(item => item.id == property.id)[0]) {
             this.Data.favorites.push(property);
-            this.snackBar.open('The property "' + property.titulo_original + '" has been added to favorites.', '×', {
+            this.snackBar.open('The property "' + property.nombre + '" has been added to favorites.', '×', {
                 verticalPosition: 'top',
                 duration: 3000,
                 direction: direction

@@ -7,11 +7,11 @@
         <mat-list-item *ngFor="let comments of comentarios" class="h-100">
             <!-- <img matListAvatar [src]="comments.avatar" alt="image" class="review-author">-->
             <p matLine fxLayoutAlign="start center">
-                <span class="fw-500">{{comments.author}}</span>
+                <span class="fw-500">{{comments.usuario}}</span>
                 <!--<mat-icon class="text-muted px-1" [matTooltip]="comments.tooltip" matTooltipPosition="after">{{comments.icon}}</mat-icon>-->
             </p>
             <!--<p matLine class="text-muted"><small>{{comments.date}}</small></p>-->
-            <p matLine class="text">{{comments.text}}</p>
+            <p matLine class="text">{{comments.comentario}}</p>
         </mat-list-item>
     </mat-list>
 
@@ -32,16 +32,16 @@
         <div fxFlex="100" class="p-2">
             <mat-form-field appearance="outline" class="w-100">
                 <mat-label>Su comentario</mat-label>
-                <textarea matInput placeholder="Your review" formControlName="text" required rows="5"></textarea>
-                <mat-error *ngIf="commentForm.controls.text.errors?.required">Obligatorio</mat-error>
+                <textarea matInput placeholder="Your review" formControlName="comentario" required rows="5"></textarea>
+                <mat-error *ngIf="commentForm.controls.comentario.errors?.required">Obligatorio</mat-error>
             </mat-form-field>
         </div>
         <div fxFlex="100" class="p-2">
             <mat-form-field appearance="outline" class="w-100">
                 <mat-label>Su nombre</mat-label>
-                <input matInput placeholder="Your name" formControlName="author" required>
-                <mat-error *ngIf="commentForm.controls.author.errors?.required">Name is required</mat-error>
-                <mat-error *ngIf="commentForm.controls.author.hasError('minlength')">Nombre demasiado largo</mat-error>
+                <input matInput placeholder="Your name" formControlName="usuario" required>
+                <mat-error *ngIf="commentForm.controls.usuario.errors?.required">Name is required</mat-error>
+                <mat-error *ngIf="commentForm.controls.usuario.hasError('minlength')">Nombre demasiado largo</mat-error>
             </mat-form-field>
         </div>
         <div fxFlex="100" class="text-center w-100">

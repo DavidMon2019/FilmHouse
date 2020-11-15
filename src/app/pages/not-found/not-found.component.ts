@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class NotFoundComponent implements OnInit {
 
-  constructor(public router:Router) { }
+  constructor(public router: Router) { }
 
   ngOnInit() {
   }
@@ -18,7 +18,7 @@ export class NotFoundComponent implements OnInit {
   }
 
   ngAfterViewInit(){
-    document.getElementById('preloader').classList.add('hide');    
+    document.getElementById('preloader').classList.add('hide');
   }
 
 }

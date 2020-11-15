@@ -10,17 +10,18 @@
                 </button>
                 <mat-card [perfectScrollbar]="psConfig">
                     <div class="widget">
-                        <app-comments *ngIf="property" [propertyId]="property.id"></app-comments>
+<!--                        <app-chat></app-chat>-->
+<!--                        <app-comments *ngIf="property" [id]="property.id"></app-comments>-->
                     </div>
                 </mat-card>
             </mat-sidenav>
             <mat-sidenav-content ngClass.gt-sm="distance">
                 <mat-card fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between center">
                     <div>
-                        <h2 class="uppercase" ngClass.xs="text-center">{{property?.titulo_original}}</h2>
+                        <h2 class="uppercase" ngClass.xs="text-center">{{property?.nombre}}</h2>
                         <p fxLayout="row" fxLayoutAlign.xs="center" class="address mb-0">
                             <mat-icon class="text-muted">location_on</mat-icon>
-                            <span>{{property?.fecha_estreno}}</span>
+                            <span>{{property?.fechaEstreno}}</span>
                         </p>
                     </div>
                     <!--<div fxLayout="column" fxLayoutAlign.xs="center center" class="mx-3">
@@ -38,27 +39,19 @@
                                     [ratingsValue]="property?.ratingsValue"></app-rating>
                     </div>-->
                     <button *ngIf="!sidenavOpen" mat-icon-button (click)="sidenav.toggle()">
-                        <mat-icon>more_vert</mat-icon>
+                        <mat-icon class="text-muted">date_range</mat-icon>
                     </button>
                 </mat-card>
 
                 <!--Videos -->
-                <!--<mat-card *ngIf="property" class="mt-3">
+                <mat-card *ngIf="property" class="mt-3">
                     <mat-card-header fxLayoutAlign="center center">
                         <mat-card-title class="uppercase">Pelicula</mat-card-title>
                     </mat-card-header>
                     <mat-card-content>
-                        <video controls class="mw-100">
-                            <source [src]="property.videos[0].link" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        &lt;!&ndash; <mat-video [src]="property.videos[0].link" [title]="property.videos[0].name" [download]="true" [keyboard]="false"></mat-video> &ndash;&gt;
-                        <div class="mt-5">
-                            <h3 class="text-center fw-500">{{property.url_pelicula[1].name}}</h3>
-                            <div [innerHtml]="embedVideo" class="videoWrapper"></div>
-                        </div>
+                        <youtube-player videoId="{{property.link}}" [title]="property.nombre" width="853" height="480" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></youtube-player>
                     </mat-card-content>
-                </mat-card>-->
+                </mat-card>
 
                 <mat-card class="mt-3">
                     <mat-card-header fxLayoutAlign="center center">
@@ -246,14 +239,14 @@
                     </mat-card-content>
                 </mat-card>  -->
 
-<!--                <mat-card class="mt-3" fxLayout="row wrap" fxLayoutAlign="space-between center">
-                    <span>ID:<span class="fw-500 mx-2">{{property?.id}}</span></span>
-                    <span>Published:<span
-                            class="fw-500 mx-2">{{property?.published | date:"dd MMMM, yyyy"}}</span></span>
-                    <span>Last Update:<span
-                            class="fw-500 mx-2">{{property?.lastUpdate | date:"dd MMMM, yyyy"}}</span></span>
-                    <span>Views:<span class="fw-500 mx-2">{{property?.views}}</span></span>
-                </mat-card>-->
+                <!--                <mat-card class="mt-3" fxLayout="row wrap" fxLayoutAlign="space-between center">
+                                    <span>ID:<span class="fw-500 mx-2">{{property?.id}}</span></span>
+                                    <span>Published:<span
+                                            class="fw-500 mx-2">{{property?.published | date:"dd MMMM, yyyy"}}</span></span>
+                                    <span>Last Update:<span
+                                            class="fw-500 mx-2">{{property?.lastUpdate | date:"dd MMMM, yyyy"}}</span></span>
+                                    <span>Views:<span class="fw-500 mx-2">{{property?.views}}</span></span>
+                                </mat-card>-->
 
 
             </mat-sidenav-content>

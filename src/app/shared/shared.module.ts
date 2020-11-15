@@ -48,26 +48,16 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 import {PipesModule} from '../theme/pipes/pipes.module';
 import {DirectivesModule} from '../theme/directives/directives.module';
-
-
-import {HeaderImageComponent} from './header-image/header-image.component';
 import {HeaderCarouselComponent} from './header-carousel/header-carousel.component';
-import {LoadMoreComponent} from './load-more/load-more.component';
 import {PropertiesToolbarComponent} from './properties-toolbar/properties-toolbar.component';
-import {PropertiesSearchComponent} from './properties-search/properties-search.component';
 import {CompareOverviewComponent} from './compare-overview/compare-overview.component';
-import {RatingComponent} from './rating/rating.component';
-import {PropertiesSearchResultsFiltersComponent} from './properties-search-results-filters/properties-search-results-filters.component';
-import {PropertiesCarouselComponent} from './properties-carousel/properties-carousel.component';
 import {ClientsComponent} from './clients/clients.component';
 import {GetInTouchComponent} from './get-in-touch/get-in-touch.component';
 import {CommentsComponent} from './comments/comments.component';
-import {TestimonialsComponent} from './testimonials/testimonials.component';
-import {OurAgentsComponent} from './our-agents/our-agents.component';
-import {MissionComponent} from './mission/mission.component';
-import {OurServicesComponent} from './our-services/our-services.component';
 import {LogoComponent} from './logo/logo.component';
-import {ScrollingModule} from "@angular/cdk/scrolling";
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {PropertyItemComponent} from './property-item/property-item.component';
+import {ChatModule} from './chat/chat.module';
 
 @NgModule({
     imports: [
@@ -115,6 +105,7 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
         ScrollingModule
     ],
     exports: [
+        ChatModule,
         RouterModule,
         ReactiveFormsModule,
         SwiperModule,
@@ -156,41 +147,23 @@ import {ScrollingModule} from "@angular/cdk/scrolling";
         PipesModule,
         DirectivesModule,
         LogoComponent,
-        HeaderImageComponent,
         HeaderCarouselComponent,
-        LoadMoreComponent,
         PropertiesToolbarComponent,
-        PropertiesSearchComponent,
         CompareOverviewComponent,
-        RatingComponent,
-        PropertiesSearchResultsFiltersComponent,
-        PropertiesCarouselComponent,
         ClientsComponent,
         GetInTouchComponent,
         CommentsComponent,
-        TestimonialsComponent,
-        OurAgentsComponent,
-        MissionComponent,
-        OurServicesComponent
+        PropertyItemComponent
     ],
     declarations: [
         LogoComponent,
-        HeaderImageComponent,
         HeaderCarouselComponent,
-        LoadMoreComponent,
         PropertiesToolbarComponent,
-        PropertiesSearchComponent,
         CompareOverviewComponent,
-        RatingComponent,
-        PropertiesSearchResultsFiltersComponent,
-        PropertiesCarouselComponent,
         ClientsComponent,
         GetInTouchComponent,
         CommentsComponent,
-        TestimonialsComponent,
-        OurAgentsComponent,
-        MissionComponent,
-        OurServicesComponent
+        PropertyItemComponent
     ],
     entryComponents: [
         CompareOverviewComponent

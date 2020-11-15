@@ -27,7 +27,6 @@ import {AppInterceptor} from './theme/utils/app-interceptor';
 import {PagesComponent} from './pages/pages.component';
 import {NotFoundComponent} from './pages/not-found/not-found.component';
 import {Toolbar1Component} from './theme/components/toolbar1/toolbar1.component';
-import {Toolbar2Component} from './theme/components/toolbar2/toolbar2.component';
 import {UserMenuComponent} from './theme/components/user-menu/user-menu.component';
 import {CurrencyComponent} from './theme/components/currency/currency.component';
 import {LangComponent} from './theme/components/lang/lang.component';
@@ -36,7 +35,7 @@ import {ContactsComponent} from './theme/components/contacts/contacts.component'
 import {HorizontalMenuComponent} from './theme/components/menu/horizontal-menu/horizontal-menu.component';
 import {VerticalMenuComponent} from './theme/components/menu/vertical-menu/vertical-menu.component';
 import {FooterComponent} from './theme/components/footer/footer.component';
-import {LockScreenComponent} from './pages/lock-screen/lock-screen.component';
+import {ChatModule} from './shared/chat/chat.module';
 
 
 @NgModule({
@@ -50,20 +49,19 @@ import {LockScreenComponent} from './pages/lock-screen/lock-screen.component';
         SocialIconsComponent,
         ContactsComponent,
         Toolbar1Component,
-        Toolbar2Component,
         HorizontalMenuComponent,
         VerticalMenuComponent,
-        FooterComponent,
-        LockScreenComponent
+        FooterComponent
     ],
     imports: [
+
         BrowserModule,
         BrowserAnimationsModule,
         FormsModule,
         HttpClientModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyA1rF9bttCxRmsNdZYjW7FzIoyrul5jb-s',
-            libraries: ["places"]
+            libraries: ['places']
         }),
         EmbedVideo.forRoot(),
         NgProgressModule,

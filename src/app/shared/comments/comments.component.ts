@@ -9,14 +9,15 @@ import {Comentarios} from '../../app.models';
     styleUrls: ['./comments.component.scss']
 })
 export class CommentsComponent implements OnInit {
-    @Input('propertyId') propertyId: string;
+    @Input('id') id: string;
     public commentForm: FormGroup;
 
     /*Inicializacion del objeto tipo comentarios*/
     public comentarios: Comentarios[] = [{
-        author: '',
-        text: '',
-        idPelicula: this.propertyId
+        id: '',
+        usuario: '',
+        comentario: '',
+        idPelicula: this.id
     }];
     // /* public reviews: = [
     //             {
@@ -50,8 +51,8 @@ export class CommentsComponent implements OnInit {
 
     ngOnInit() {
         this.commentForm = this.fb.group({
-            text: [null, Validators.required],
-            author: [null, Validators.compose([Validators.required, Validators.minLength(4)])]
+            comentario: [null, Validators.required],
+            usuario: [null, Validators.compose([Validators.required, Validators.minLength(4)])]
         });
     }
 

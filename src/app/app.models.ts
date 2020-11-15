@@ -1,21 +1,23 @@
+import {Action} from './shared/chat/shared/model/action';
+
 export class Property {
     constructor(
-        public  id: string,
-        public  titulo_original: string,
-        public  id_genero: Genero,
-        public  id_lenguaje: Lenguaje,
-        public  id_subtitulo: Subtitulo,
-        public  fecha_produccion: string,
-        public  fecha_estreno: string,
-        public  url_pelicula: Video[],
-        public  duracion: string,
-        public  id_clasificacion: Clasificacion,
-        public  resumen: string,
+        public id: string,
+        public nombre: string,
+        public genero: string,
+        public idioma: string,
+        public fechaEstreno: string,
+        public duracion: string,
+        public clasificacion: string,
+        public resumen: string,
+        public link: string,
+        public propertyStatus: string[]
     ) {
     }
 }
 
-//clase genero
+
+// clase genero
 export class Genero {
     constructor(
         public id: number,
@@ -25,34 +27,36 @@ export class Genero {
     }
 }
 
-//clase lenguaje
+// clase lenguaje
 export class Lenguaje {
     constructor() {
     }
 }
 
-//clase subtitulos
+// clase subtitulos
 export class Subtitulo {
     constructor() {
     }
 }
 
-//clase Clasificacion
+// clase Clasificacion
 export class Clasificacion {
     constructor() {
     }
 }
 
 export interface Comentarios {
-    author: string,
-    text: string,
-    idPelicula: string
+    id: string;
+    usuario: string;
+    comentario: string;
+    idPelicula: string;
+    action?: Action;
 }
 
 
 // export class Property {
 //     public id: number;
-//     public title: string; 
+//     public title: string;
 //     public desc: string;
 //     public propertyType: string;
 //     public propertyStatus: string[];
